@@ -1,0 +1,118 @@
+
+Sample Data for the DISTANCE sampling course
+
+
+Amakihi (Point transect with covariates)
+   - ships with the DISTANCE program. See Auk paper in director for more details
+    The example data were collected as part of a larger study to assess a 
+    Palila (Loxioides bailleuli) translocation experiment on the island of Hawaii 
+    (Fancy et al. 1997). Multi-species point- transect surveys were performed at seven 
+    survey periods between July 1992 and April 1995. There were 41 point-count stations, 
+    though they were not all surveyed in some survey periods.
+    To illustrate the use of MCDS methods, we selected the most commonly recorded species, 
+    the Hawaii Amakihi (Hemignathus virens), a generalist Hawaiian honeycreeper. 
+    The main goal of the analysis was to estimate Amakihi density during each of the survey periods, 
+    which are considered temporal strata. 
+   - covariates are Observer (OBS), minutes after sunrise (MAS), or hours after sunrise (HAS)
+     The HAS covariates will be treated as a categorical variable while MAS will be treated as a
+     continuous covariate.
+
+
+Dolphins (Line transect, double observer)
+    - from WISP package
+    Harbour Porpoise sample data from 1994 SCANS survey
+    98 transect lines, 1 km half-width of varying lengths (km)
+    Record distance to group, group size, sex (groups are composed of a single sex), and
+    exposure (a detectability factor related to weather and other attibutes)
+    Total survey region is 889600 km2 
+
+
+Example-Line
+   - ships with the DISTANCE program
+   - hypothetical data illustrating a simple line transect analysis
+
+
+
+Example-Line-Stratification
+   - ships with the DISTANCE program
+   - hypothetical data illustrating geographic stratification in line transects
+
+
+
+Example-point
+   - ships with the DISTANCE progra
+   - hypothetical data illustrating a simple point transect analysis 
+
+
+
+Elephant Dung density (Line transect; Use of multipliers)
+   http://www.wcsmalaysia.org/analysis/Elephant_dung_DISTANCE.htm
+   In 2001, WCS Indonesia Program estimated the elephant population of Bukit Barisan 
+   Selatan National Park (BBSNP) in Sumatra, Indonesia, from dung surveys (Hedges et al, 2005).
+
+   The field research comprised three components:
+
+         dung production rate estimation based on observations of 12 
+         captive elephants ranging freely in the nearby Way Kambas National Park;
+ 
+         dung disappearance time based on monitoring 1302 dung piles in 
+         BBSNP for 18 months prior to the survey of dung density; and
+ 
+         dung pile density estimated by line transect surveys.
+
+GolfTees
+    - ships with DISTANCE
+    - GolfTees with two observers taken from Borchers (2002)
+    - Two colors (green=0 and yellow=1) placed in clusters of 1-8 in a survey region of 1680 m2.
+      Tees were either exposed above grass(exposed=1) or not exposed (exposed=0).
+      11 8 m wide strips (w=4 m) and totaled 210 m in length.
+      Two sets of teams surveyed and are treated as 2 observers.
+
+
+Grosbeak (Point transect)
+    - Blue grosbeaks (Guiraca caerulea) in Georgia, USA. 
+      Points (1-2) were randomly placed in 39 agricultural fields that were being 
+      included in a longleaf pine (Pinus palustris) restoration program.
+      http://coopunit.forestry.uga.edu/quant_cons_book/companion/chapter9/index.html
+
+
+
+HouseWren (Point Transect)
+    - ships with DISTANCE program.
+    - 10 study blocks of 16 ha/ 14-16 points in each block along 30 km of South Platte River
+    - 4 observers visited each point.
+
+
+
+Pheasants (Line transect)
+    - Great Argus Pheasants
+      Within an 800-ha study area, 144 line transects were placed, each 2,200-m long. 
+      Observers walked each transect and detected Argus present, if any.  
+      During the study, birds were detected on 45 of the 144 transects. 
+      http://coopunit.forestry.uga.edu/quant_cons_book/companion/chapter9/index.html
+
+
+
+Orangatans (Line transect; stratification)
+   http://www.wcsmalaysia.org/analysis/O-u_nests_DISTANCE.htm
+   WCS Malaysia has studied orang utan in Batang Ai National Park in Sarawak 
+   for some years. Like most great apes, orang utan build a simple nest of 
+   broken branches to sleep at night, and sometimes build a day-time nest 
+   too if they take a siesta.
+
+   If we assume that there is a simple relationship between the 
+   number of nests and the number of orang utan in our study area, 
+   we can use the number of nests to compare populations between 
+   sites or to detect declines or increases in the population over time.
+
+   Transect surveys were used to estimate the density of nests in the park.
+
+
+
+Tortiose
+   - Plastic tortoise data set collected using line transect sampling.
+   - Available in the wisp package (tortoise.samp.lt)
+   - 3 transects, 1000 m in length each.
+   - Truncation distance is 50 m on each side of the line during the survey
+   - Total area is unknown, so just estimate density.
+

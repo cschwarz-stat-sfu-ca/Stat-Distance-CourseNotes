@@ -1,0 +1,10 @@
+Plastic tortoise data set collected using line transect sampling.
+
+Available in the wisp package (tortoise.samp.lt)
+
+3 transects, 1000 m in length each.
+Truncation distance is 50 m on each side of the line during the survey
+
+Total area is unknown, so just estimate density.
+
+
