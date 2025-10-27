@@ -24,12 +24,15 @@ plyr::l_ply(dirs, function(directory){
     cat("Not a hidden directory \n")
     
     # check if this directory already has an index.html file. If so, then skip
-    files <- dir(directory)
+    files <- dir(directory, include.dirs=TRUE)
+    cat("Files list \n")
+    files
+    browser()
     if(! any(files == "index.html")){
       cat("No html file - generate one \n")
       current_wd <- getwd()
       setwd(directory)
-      system("tree -H '' -L 1 --noreport --houtro '' --prune --charset utf-8 --ignore-case --timefmt '%d-%b-%Y %H:%M' -I 'index.html' -T 'Downloads' -s -D -o index.html")
+      system("tree -H '' -L 1 --noreport --houtro '' --charset utf-8 --ignore-case --timefmt '%d-%b-%Y %H:%M' -I 'index.html' -T 'Index to this directory' -s -D -o index.html")
       setwd(current_wd)
       cat("Index file generated \n")
     } 
